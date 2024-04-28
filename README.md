@@ -27,14 +27,6 @@ In this game, you control Mario as he navigates through various levels, collects
 
 ![Gameplay Screenshot](/path/to/screenshot.png)
 
-## Contributing
-
-Contributions are welcome! If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ## What I Learned
 During the development of this game, I learned several important concepts and techniques:
 
@@ -46,3 +38,11 @@ During the development of this game, I learned several important concepts and te
 - Restarting the canvas with the init function: I created an init function that resets the game canvas, allowing for a fresh start after completing a level or restarting the game.
 
 These concepts and techniques were crucial in the development of this 2D Mario game, and I am excited to continue expanding my knowledge and skills in game development.
+
+## Contributing
+
+Contributions are welcome! If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).

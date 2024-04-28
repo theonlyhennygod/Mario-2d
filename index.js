@@ -45,8 +45,8 @@ class Player {
 class Platform {
     constructor() {
         this.position = {
-            x: 200,
-            y: 100
+            x: 300,
+            y: 400
         }
 
         this.width = 200;
@@ -70,7 +70,7 @@ const keys = {
     left: {
         pressed: false
     }
- }
+}
 
 function animate() {
     requestAnimationFrame(animate);
@@ -85,6 +85,16 @@ function animate() {
         player.velocity.x = -5;
     } else {
         player.velocity.x = 0;
+    }
+
+    // platform collision detection
+    if (
+        player.position.y + player.height <= platform.position.y && 
+        player.position.y + player.height + player.velocity.y >= platform.position.y && 
+        player.position.x + player.width >= platform.position.x && 
+        player.position.x <= platform.position.x + platform.width
+    ) {
+        player.velocity.y = 0;
     }
 }
 
@@ -110,7 +120,7 @@ addEventListener('keydown', ({ keyCode }) => {
             player.velocity.y = -10;
             break;
     }
-    console.log(keys.right.pressed);
+    // console.log(keys.right.pressed);
 })
 
 addEventListener('keyup', ({ keyCode }) => {
@@ -132,5 +142,4 @@ addEventListener('keyup', ({ keyCode }) => {
             break;
     }
     // console.log(keys.right.pressed);
-
 })
