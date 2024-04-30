@@ -2,6 +2,8 @@
 
 This project is a game that utilizes gravity and velocity to create a fun gaming experience. It is built using JavaScript and the DOM to create objects and implement game mechanics. You must run the program on your server.
 
+
+
 ## Features
 
 - Gravity + Velocity: The game incorporates realistic physics by simulating gravity and velocity for the game objects.
