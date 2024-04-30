@@ -1,21 +1,31 @@
-Canvas Boilerplate is the go-to solution for quickly creating modern canvas pieces using ES6 and webpack.
+# Mario Game
+
+This project is a game that utilizes gravity and velocity to create a fun gaming experience. It is built using JavaScript and the DOM to create objects and implement game mechanics.
+
+## Features
+
+- Gravity + Velocity: The game incorporates realistic physics by simulating gravity and velocity for the game objects.
+- DOM Manipulation: The game utilizes the Document Object Model (DOM) to create and manipulate objects on the screen.
+- Destructuring: JavaScript's destructuring feature is used to efficiently extract values from objects and arrays.
+- Boolean Value Checking: The game checks boolean values before performing certain actions, ensuring efficient and error-free execution.
+- Rectangular Collision Detection: The game implements collision detection logic to detect collisions between objects in a rectangular shape.
+- Canvas Restart: The game provides a function called `init` that allows for easy restart of the canvas, resetting the game state.
+- Constructor Usage: The game utilizes constructors to build classes and allow objects to take in parameters later.
+- Webpack: The project uses Webpack, a popular module bundler, to manage dependencies and optimize the game's performance.
 
 ## Getting Started
 
-1.  Clone the repo:
+To run the game locally, follow these steps:
 
-        git clone https://github.com/christopher4lis/canvas-boilerplate.git
+1. Clone the repository: `git clone https://github.com/your-username/mario-game.git`
+2. Install the dependencies: `npm install`
+3. Build the project: `npm run build`
+4. Open the `index.html` file in your web browser.
 
-2.  Install dependencies:
+## Contributing
 
-        yarn
+Contributions are welcome! If you have any suggestions or improvements, please submit a pull request. For major changes, please open an issue first to discuss what you would like to change.
 
-    or
+## License
 
-        npm install
-
-3.  Run webpack:
-
-        npm start
-
-Your canvas piece should open up automatically at http://localhost:3000 and you should see 'HTML CANVAS BOILERPLATE' on hover.
+This project is licensed under the [MIT License](LICENSE).
