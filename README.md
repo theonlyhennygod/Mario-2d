@@ -26,7 +26,7 @@ To run the game locally, follow these steps:
 
 ## Improvements
 
-Some future implementation I plan on doing, is adding music to the game, 
+Some future implementation I plan on doing, is adding music to the game, also adding artwork to the game! I would like to create a customized character that's built with sprite so you can have a real feeling.
 
 ## Contributing
 
