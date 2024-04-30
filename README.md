@@ -4,6 +4,10 @@ This project is a game that utilizes gravity and velocity to create a fun gaming
 
 
 
+https://github.com/theonlyhennygod/Mario-2d/assets/144828210/3722361d-ac65-48eb-af01-eb6a741be17d
+
+
+
 ## Features
 
 - Gravity + Velocity: The game incorporates realistic physics by simulating gravity and velocity for the game objects.
