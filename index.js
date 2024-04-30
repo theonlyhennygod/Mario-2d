@@ -1,6 +1,11 @@
-const canvas = document.querySelector('canvas')
+import platform from './img/platform.png';
 
-const c = canvas.getContext('2d')
+console.log(platform);
+
+
+const canvas = document.querySelector('canvas');
+
+const c = canvas.getContext('2d');
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -38,10 +43,10 @@ class Player {
 }
 
 class Platform {
-    constructor() {
+    constructor({ x, y }) {
         this.position = {
-            x: 300,
-            y: 400
+            x: x,
+            y: y
         }
         this.width = 200;
         this.height = 20;
@@ -53,8 +58,15 @@ class Platform {
 }
 
 const player = new Player();
-const platforms = [new Platform()];
-
+const platforms = 
+[new Platform({
+    x: 100,
+    y: 200
+ }), 
+ new Platform({
+    x: 400,
+    y: 400
+ })];
 
 const keys = {
     right: {
@@ -65,17 +77,17 @@ const keys = {
     }
 }
 
+let scrollOffset = 0;
+
 function animate() {
     requestAnimationFrame(animate);
     c.clearRect(0, 0, canvas.width, canvas.height);
     player.update();
 
-
     platforms.forEach(platform => {
         platform.draw();
     });
 
-    // here we can check if the keys are pressed and move the player left or right
     if (keys.right.pressed && player.position.x < 400) {
         player.velocity.x = 5;
     } else if (keys.left.pressed && player.position.x > 50) {
@@ -84,18 +96,21 @@ function animate() {
         player.velocity.x = 0;
 
         if (keys.right.pressed) {
+            scrollOffset += 5;
             platforms.forEach(platform => {
                 platform.position.x -= 5;
             })
         } else if (keys.left.pressed) {
+            scrollOffset -= 5;
             platforms.forEach(platform => {
                 platform.position.x += 5;
             })
         }
     }
 
-    // platform collision detection
+    console.log(scrollOffset)
 
+    // platform collision detection
     platforms.forEach(platform => {
         if (
             player.position.y + player.height <= platform.position.y &&
@@ -106,6 +121,10 @@ function animate() {
             player.velocity.y = 0;
         }
     })
+
+    if (scrollOffset > 2000) {
+        console.log('you win');
+    }
 
 }
 
