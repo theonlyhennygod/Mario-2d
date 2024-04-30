@@ -1,6 +1,6 @@
 # Mario Game
 
-This project is a game that utilizes gravity and velocity to create a fun gaming experience. It is built using JavaScript and the DOM to create objects and implement game mechanics.
+This project is a game that utilizes gravity and velocity to create a fun gaming experience. It is built using JavaScript and the DOM to create objects and implement game mechanics. You must run the program on your server.
 
 ## Features
 
@@ -21,6 +21,12 @@ To run the game locally, follow these steps:
 2. Install the dependencies: `npm install`
 3. Build the project: `npm run build`
 4. Open the `index.html` file in your web browser.
+
+5. Demo at [Demo](https://mario-2d.vercel.app)
+
+## Improvements
+
+Some future implementation I plan on doing, is adding music to the game, 
 
 ## Contributing
 
